@@ -32,7 +32,7 @@ const diet = ["tomato", "cucumber", "rocket"];
 
 // You are a programmer. In one line (one statement) insert hamburger, soda and pizza between the elements cucumber and rocket
 diet.splice(2, 0,  "Hamburger", "Soda", "Pizza");
-diet.forEach(a => console.log(a));
+console.log(diet);
 
 
 // --------------------------------------
@@ -42,7 +42,7 @@ diet.forEach(a => console.log(a));
 // Don't remove by index. You know in advance that it's the last in the array because you are too full already. 
 
 
-console.log("removed last element: " + diet.pop())
+console.log("removed last element: " + diet.pop(2))
 // --------------------------------------
 // Exercise 6 - Copy array
 
@@ -72,9 +72,9 @@ const discardedNumbers = [];
 
 // log the element if the number is above 6 or below 0
 // else push them to the array discardedNumbers
-numbers.forEach(x => {
-    if(x > 6 || x < 0) console.log(x);
-    else discardedNumbers.push(x);
+numbers.forEach (x => {
+    if (x > 6 || x < 0) { console.log(x); }
+    else { discardedNumbers.push(x); }
 })
 
 // --------------------------------------
