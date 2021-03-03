@@ -1,0 +1,7 @@
+{
+    "name": "clockApi",
+    "description": "a clock api for getting times and such",
+    "dependencies": {
+        "express": "4.17.1"
+    }
+}

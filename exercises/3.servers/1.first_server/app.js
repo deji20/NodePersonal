@@ -1,7 +1,7 @@
 const stud = require("./models/Student");
 const exp = require("express");
-const Student = require("./models/Student");
 const app = exp();
+
 
 let students = [
     new Student(1, "Deji", 22, "NodeJs 2"),
