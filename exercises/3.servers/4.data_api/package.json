@@ -1,7 +1,0 @@
-{
-    "name": "data_api",
-    "description": "a pure data manipulating api",
-    "dependencies": {
-        "express": "4.17.1"
-    }
-}

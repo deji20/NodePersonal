@@ -1,0 +1,11 @@
+{
+    "name": "data_api",
+    "description": "a pure data manipulating api",
+    "scripts": {
+        "start": "PORT=8080 node app.js",
+        "start-dev": "newman /home/dejie/Desktop/Postman/Collections/nodeRestApi & PORT=3000 node app.js"
+    },
+    "dependencies": {
+        "express": "4.17.1"
+    }
+}
