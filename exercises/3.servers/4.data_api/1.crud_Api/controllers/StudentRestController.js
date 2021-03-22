@@ -25,7 +25,26 @@ router.post("/", (req, res) => {
 });
 
 router.patch("/:id", (req, res) => {
-    console.log(Object.keys(students));
+    let id = Number(req.params.id);
+
+    let studentPatch = req.body.student;
+
+    let patchKeys = Object.keys(studentPatch);
+    let studentKeys = Object.keys(students[id]);
+    
+    let changedValues = students.map(student => {
+        if(id === student.id){
+            patchKeys.forEach(key => {
+                console.log(key);
+                if(studentKeys.includes(key) && key != "id"){
+                    student[key] = studentPatch[key];
+                }
+            })
+        }
+        return student
+    });
+
+    res.send(changedValues);
 });
 
 router.put("/:id", (req, res) => {
